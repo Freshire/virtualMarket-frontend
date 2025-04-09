@@ -25,40 +25,45 @@ const ProductModal = ({ product, isOpen, onClose, onPlaceOrder }) => {
         </div>
 
         <div className="modal-body">
-          <div className="product-image-container">
-            <img src={product.image} alt={product.name} className="product-image" />
-          </div>
-          
-          <div className="product-details">
-            <h3>Product Details</h3>
-            <p>{product.description}</p>
-            
-            <div className="product-specs">
-              <div className="spec-item">
-                <span className="spec-label">Type:</span>
-                <span className="spec-value">Digital Subscription</span>
-              </div>
-              <div className="spec-item">
-                <span className="spec-label">Duration:</span>
-                <span className="spec-value">1 Year</span>
-              </div>
-              <div className="spec-item">
-                <span className="spec-label">Auto-renewal:</span>
-                <span className="spec-value">Yes</span>
-              </div>
+          <div className="modal-left">
+            <div className="product-image-container">
+              <img src={product.image} alt={product.name} className="product-image" />
+            </div>
+            <div className="product-description">
+              <p>{product.description}</p>
             </div>
           </div>
-
-          <div className="user-details">
-            <h3>User Information</h3>
-            <div className="user-info">
-              <div className="info-item">
-                <span className="info-label">Name:</span>
-                <span className="info-value">Demo User</span>
+          
+          <div className="modal-right">
+            <div className="product-details">
+              <h3>Product Details</h3>
+              <div className="product-specs">
+                <div className="spec-item">
+                  <span className="spec-label">Type:</span>
+                  <span className="spec-value">Digital Subscription</span>
+                </div>
+                <div className="spec-item">
+                  <span className="spec-label">Duration:</span>
+                  <span className="spec-value">1 Year</span>
+                </div>
+                <div className="spec-item">
+                  <span className="spec-label">Auto-renewal:</span>
+                  <span className="spec-value">Yes</span>
+                </div>
               </div>
-              <div className="info-item">
-                <span className="info-label">Email:</span>
-                <span className="info-value">demo@example.com</span>
+            </div>
+
+            <div className="user-details">
+              <h3>User Information</h3>
+              <div className="user-info">
+                <div className="info-item">
+                  <span className="info-label">Name:</span>
+                  <span className="info-value">Demo User</span>
+                </div>
+                <div className="info-item">
+                  <span className="info-label">Email:</span>
+                  <span className="info-value">demo@example.com</span>
+                </div>
               </div>
             </div>
           </div>
